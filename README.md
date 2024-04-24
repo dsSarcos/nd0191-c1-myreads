@@ -1,56 +1,56 @@
 # MyReads Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+Author: Diego Santamaria-Sarcos
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) to bootstrap the project.
+This repository contains my submission for the first project in Udacity's React course. This project involves developing a web app, MyReads, using React.js. The MyReads app is comprised of two main pages: a home page and a search page. The homepage shows a selection of books categorized into three shelves: Currently Reading, Want to Read, and Read. The user can click on the dropdown menu by each book to change the shelf it's on or remove it entirely. Clicking the plus on the bottom right of the homepage navigates the user to the search page, where new books can be searched for added via the same dropdown menus.
 
 ## Running Instructions
 
-To ensure that the project runs, use nvm to set the version of node:
+To ensure that the project runs well, we need to use nvm to set our current node version. The full installation and running instructions are as follows:
 
-\$nvm install 16
-
-Then run the following commands:
-
-\$npm install
-\$npm start
+```bash
+$nvm install 16
+$npm install
+$npm start
+```
 
 ## Sources
 
 1. [No cover image](https://dhmckee.com/archives/2018/11/podcast-book-cover-design-tips-with-stuart-bache/)
 2. [Passing props through route](https://ui.dev/react-router-pass-props-to-components)
 
-## TL;DR
-
-To get started developing right away:
-
-- install all project dependencies with `npm install`
-- start the development server with `npm start`
-
-## What You're Getting
+## Project Hierarchy
 
 ```bash
-├── CONTRIBUTING.md
 ├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
+├── 
 ├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
 ├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
+│   ├── favicon.ico # React Icon.
 │   └── index.html # DO NOT MODIFY
 └── src
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── App.js # The root of the app
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
+    ├── Components # The components used to build the main pages
+    │   ├── Book.js
+    │   ├── Bookshelf.js
+    │   ├── Header.js
+    │   └── OpenSearch.js
+    ├── icons # Images for the app
     │   ├── add.svg
     │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
+    │   ├── arrow-drop-down.svg
+    │   └── noCover.png
+    ├── Pages # The two pages comprising the app
+    │   ├── Home.js
+    │   └── Search.js
+    │   
+    ├── index.css # Global styles. 
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+# Udacity's Original Documentation
 
 ## Backend Server
 
@@ -94,17 +94,3 @@ search(query);
 - query: `<String>`
 - Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
 - These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
-
-## Important
-
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
-
-## Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/README.md).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
