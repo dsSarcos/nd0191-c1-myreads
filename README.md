@@ -4,6 +4,22 @@ This is the starter template for the final assessment project for Udacity's Reac
 
 Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) to bootstrap the project.
 
+## Running Instructions
+
+To ensure that the project runs, use nvm to set the version of node:
+
+\$nvm install 16
+
+Then run the following commands:
+
+\$npm install
+\$npm start
+
+## Sources
+
+1. [No cover image](https://dhmckee.com/archives/2018/11/podcast-book-cover-design-tips-with-stuart-bache/)
+2. [Passing props through route](https://ui.dev/react-router-pass-props-to-components)
+
 ## TL;DR
 
 To get started developing right away:
