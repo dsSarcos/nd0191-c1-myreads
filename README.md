@@ -50,6 +50,10 @@ $npm start
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
 
+## Contributing
+
+This repository is my submission for Udacity's React course. While I won't accept any pull requests, feel free to check out Udacity's [starter repository](https://github.com/udacity/nd0191-c1-myreads) for this project and try it out for yourself!
+
 # Udacity's Original Documentation
 
 ## Backend Server
